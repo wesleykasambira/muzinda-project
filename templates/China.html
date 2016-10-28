@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Pydat by Wesley</title>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="static/assets9/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="static/assets9/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="static/assets9/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="homepage.html">T.P. Airways</a> by Wesley </h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/l">Search Flight</a></li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Book A Plane</a>
+								<ul>									
+									<li><a href="/f">From Harare</a></li>
+									<li><a href="/d">From Bulawayo</a></li>
+									<li><a href="/e">From Vic Falls</a></li>
+									<li><a href="/c">From Johannesburg</a></li>
+									<li><a href="/a">From Toronto</a></li>
+									<li><a href="/b">From London</a></li>
+									<li><a href="/g">From Dubai</a></li>
+									<li><a href="/h">From Hong Kong</a></li>
+									<li><a href="/i">From Paris</a></li>
+									<li><a href="/j">From Berlin</a></li>
+								</ul>
+							</li>
+							<li><a href="/#CONTACTS" method="POST" class="button">Contacts</a></li>
+						</ul>
+					</nav>
+				</header>
+				</div>
+
+
+<p align="center" class="p1" style="margin-top:60px";>Book Your Plane From Hong Kong</p>	
+<table rules = "none" background="tbg.png" class="table1" align="center" padding= font=black style="margin-top:px";>
+
+	<form action="{{ url_for('addrec8') }}" method="POST">
+	
+		<tr>
+			<td>
+			<label for="clas">Destination:</label>	
+			<select name="dest" required style="background-color:transparent;">
+			<option value="">Choose Destination</option>
+			<option value="Vic Falls">Dubai</option>
+			<option value="Johannesburg">Harare</option>
+			</select>
+			</td>
+			<td>
+				<label for "Leaving">Leaving</label>
+				<select id="departDay" name="d1" required style="background-color:transparent;"><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option selected="selected" value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+				<select id="departMonthYear" name="m1" required style="background-color:transparent;"><option selected="selected" value="Oct-2016">Oct 2016</option><option value="Nov-2016">Nov 2016</option><option value="Dec-2016">Dec 2016</option><option value="Jan-2017">Jan 2017</option><option value="Feb-2017">Feb 2017</option><option value="Mar-2017">Mar 2017</option><option value="Apr-2017">Apr 2017</option><option value="May-2017">May 2017</option><option value="Jun-2017">Jun 2017</option><option value="Jul-2017">Jul 2017</option><option value="Aug-2017">Aug 2017</option><option value="Sep-2017">Sep 2017</option><option value="Oct-2017">Oct 2017</option></select>
+			</td>
+			<td>
+				<label for "Leaving">Returning</label>
+				<select id="departDay" name="d2" style="background-color:transparent;"><option value="">Day</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option selected="selected" value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+				<select id="departMonthYear" name="m2" style="background-color:transparent;"><option value="">Month/Year</option><option selected="selected" value="Oct-2016">Oct 2016</option><option value="Nov-2016">Nov 2016</option><option value="Dec-2016">Dec 2016</option><option value="Jan-2017">Jan 2017</option><option value="Feb-2017">Feb 2017</option><option value="Mar-2017">Mar 2017</option><option value="Apr-2017">Apr 2017</option><option value="May-2017">May 2017</option><option value="Jun-2017">Jun 2017</option><option value="Jul-2017">Jul 2017</option><option value="Aug-2017">Aug 2017</option><option value="Sep-2017">Sep 2017</option><option value="Oct-2017">Oct 2017</option></select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<label for="time">Departing time:</label>
+			<select name="time" required style="background-color:transparent;">
+			<option value="">pick</option>
+			<option value="10:30">10:30</option>
+			<option value="18:30">18:30</option>
+			</select>
+			</td>
+			<td><input type ="radio" required name ="trip" value ="1" style="background-color:transparent;"><label for "trip">Round Trip</label>
+				<input type ="radio" required name ="trip" value ="2" style="background-color:transparent;"><label for "trip">One Way</label>
+			</td>
+						<td>
+			<label for="children">children tickets:</label>
+			<select name="ct" required style="background-color:transparent;">
+			<option value="">pick</option>
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			</select>
+			</td>
+			<td>
+			<label for="adults">adults tickets(18+):</label>
+			<select name="at" required style="background-color:transparent;">
+			<option value="">pick</option>
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			</select>
+			</td>
+
+		</tr>
+			<td>
+			<label for="clas">Class:</label>	
+			<select name="clas" required style="background-color:transparent;">
+			<option value="">Choose</option>
+			<option value="First Class">First Class</option>
+			<option value="Bussiness">Bussiness</option>
+			<option value="P Economic">P Economic</option>
+			<option value="Economic">Economic</option>
+			</select>
+			</td>
+			<td>
+				<label>sex:</label>
+				<input type ="radio" required name ="sex" value ="1" style="background-color:transparent;"><label for "sex">Male</label>
+				<input type ="radio" required name ="sex" value ="2" style="background-color:transparent;"><label for "sex">Female</label>
+			</td>
+			<td><label>Age:</label><input type ="number" min="0" name ="age" placeholder="pick age" required id ="age1" maxlength ="3" size ="5" style="background-color:transparent;"></td>
+		</tr>	
+		<tr>
+			<td><label>Name:</label></td><td><input type ="text" name ="name" placeholder="enter name" required id ="fname" maxlength ="15" size ="25" style="background-color:transparent;"></td>
+			<td><label>Surname:</label></td><td><input type ="text" name ="sur" placeholder="enter surname" required id ="sname" maxlength ="15" size ="25" style="background-color:transparent;"></td>
+		</tr>
+		<tr>
+			<td><label>Phone number:</label></td>
+			<td><input type ="interger" name ="phone" placeholder="phone number" required pattern="[0-9, ,+]{1,30}" id ="" maxlength ="45" size ="25" style="background-color:transparent;"></td>
+			<td><label>Alternative phone number:</label></td>
+			<td><input type ="interger" name ="phone2" placeholder="phone number" required pattern="[0-9, ,+]{1,30}" id ="" maxlength ="45" size ="25" style="background-color:transparent;"></td>
+		</tr>
+		<tr>
+				<td><label>Passport Number:</label></td>
+				<td><input type ="date" name ="pnum" placeholder="passport number" required id ="" maxlength ="15" size ="25" style="background-color:transparent;"></td>
+				<td><label>e-mail:</label></td><td><input type ="text" name ="email" placeholder="me@yahoo.com" required pattern="[a-z,0-9,_]{1,20}@[a-z]{1,15}[.][a-z,.]{1,15}" id ="e-mail" maxlength ="50" size ="25" style="background-color:transparent;"></td>
+		</tr>
+		<tr>
+			<td><label for ="address">Address:</label></td><td><textarea name ="address" placeholder="enter address" required id ="address" rows ="2" maxlength="30" size ="25" style="background-color:transparent;"></textarea></td>
+			<td><label for ="address">other tickets details:</label></td><td><textarea name ="od" placeholder="Name,Passport number,Age." id ="address" rows ="2" maxlength="" size ="25" style="background-color:transparent;"></textarea></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="submit" style="background-color:#404040;"></td>
+		</tr>
+		
+
+	</form>
+
+</table>		
+
+		<!-- Scripts -->
+			<script src="static/assets5/js/jquery.min.js"></script>
+			<script src="static/assets5/js/jquery.dropotron.min.js"></script>
+			<script src="static/assets5/js/jquery.scrollgress.min.js"></script>
+			<script src="static/assets5/js/skel.min.js"></script>
+			<script src="static/assets5/js/util.js"></script>
+			<!--[if lte IE 8]><script src="static/assets5/js/ie/respond.min.js"></script><![endif]-->
+			<script src="static/assets5/js/main.js"></script>
+
+<marquee class="p2" style="margin-top:40px"; align="bottom" style="background-color:transparent;">Click on Flight Details to check for flight charges. NB:Children age ranges from 0 to 17 years. A 20% discount is given 
+if one purchases more than 5 tickets. Enjoy your flight and have a safe journey. Thank you. </marquee>
+</font>			
+	</body>
+</html>
