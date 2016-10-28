@@ -436,6 +436,10 @@ def addrec11():
 				return render_template("result2.html",msg=msg)
 				con.close()
 
+@app.route('/z')
+def z():
+	return render_template('about.html')
+
 
 @app.route('/l')
 def l():
