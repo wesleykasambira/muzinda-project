@@ -83,7 +83,7 @@ def addrec2():
 			od=request.form['od']
 			with sql.connect("plane1.sqlite") as con:
 				cur = con.cursor()
-				cur.execute("INSERT INTO planes (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
+				cur.execute("INSERT INTO planesB (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
 				con.commit()
 				msg= "Your tickets have been successfully reserved for booking. U will be notified in 10 minutes of your invoice number and availability of sits. Payment can be done only after recieving invoice number via phone sms and email(with a duration of 30mins to pay). Please use the merchant code (31644) for paying your tickets and complete the booking process. Enter the confirmation cord the textbox provided and your tickets will be mailed to you in a period of 5 mins. You can also use your passport and invoice number for check in.  "
 		except:
@@ -123,7 +123,7 @@ def addrec3():
 			od=request.form['od']
 			with sql.connect("plane1.sqlite") as con:
 				cur = con.cursor()
-				cur.execute("INSERT INTO planes (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
+				cur.execute("INSERT INTO planesC (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
 				con.commit()
 				msg= "Your tickets have been successfully reserved for booking. U will be notified in 10 minutes of your invoice number and availability of sits. Payment can be done only after recieving invoice number via phone sms and email(with a duration of 30mins to pay). Please use the merchant code (31644) for paying your tickets and complete the booking process. Enter the confirmation cord the textbox provided and your tickets will be mailed to you in a period of 5 mins. You can also use your passport and invoice number for check in.  "
 		except:
@@ -163,7 +163,7 @@ def addrec4():
 			od=request.form['od']
 			with sql.connect("plane1.sqlite") as con:
 				cur = con.cursor()
-				cur.execute("INSERT INTO planes (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
+				cur.execute("INSERT INTO planesD (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
 				con.commit()
 				msg= "Your tickets have been successfully reserved for booking. U will be notified in 10 minutes of your invoice number and availability of sits. Payment can be done only after recieving invoice number via phone sms and email(with a duration of 30mins to pay). Please use the merchant code (31644) for paying your tickets and complete the booking process. Enter the confirmation cord the textbox provided and your tickets will be mailed to you in a period of 5 mins. You can also use your passport and invoice number for check in.  "
 		except:
@@ -203,7 +203,7 @@ def addrec5():
 			od=request.form['od']
 			with sql.connect("plane1.sqlite") as con:
 				cur = con.cursor()
-				cur.execute("INSERT INTO planes (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
+				cur.execute("INSERT INTO planesE (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
 				con.commit()
 				msg= "Your tickets have been successfully reserved for booking. U will be notified in 10 minutes of your invoice number and availability of sits. Payment can be done only after recieving invoice number via phone sms and email(with a duration of 30mins to pay). Please use the merchant code (31644) for paying your tickets and complete the booking process. Enter the confirmation cord the textbox provided and your tickets will be mailed to you in a period of 5 mins. You can also use your passport and invoice number for check in.  "
 		except:
@@ -243,7 +243,7 @@ def addrec6():
 			od=request.form['od']
 			with sql.connect("plane1.sqlite") as con:
 				cur = con.cursor()
-				cur.execute("INSERT INTO planes (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
+				cur.execute("INSERT INTO planesF (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
 				con.commit()
 				msg= "Your tickets have been successfully reserved for booking. U will be notified in 10 minutes of your invoice number and availability of sits. Payment can be done only after recieving invoice number via phone sms and email(with a duration of 30mins to pay). Please use the merchant code (31644) for paying your tickets and complete the booking process. Enter the confirmation cord the textbox provided and your tickets will be mailed to you in a period of 5 mins. You can also use your passport and invoice number for check in.  "
 		except:
@@ -283,7 +283,7 @@ def addrec7():
 			od=request.form['od']
 			with sql.connect("plane1.sqlite") as con:
 				cur = con.cursor()
-				cur.execute("INSERT INTO planes (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
+				cur.execute("INSERT INTO planesG (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
 				con.commit()
 				msg= "Your tickets have been successfully reserved for booking. U will be notified in 10 minutes of your invoice number and availability of sits. Payment can be done only after recieving invoice number via phone sms and email(with a duration of 30mins to pay). Please use the merchant code (31644) for paying your tickets and complete the booking process. Enter the confirmation cord the textbox provided and your tickets will be mailed to you in a period of 5 mins. You can also use your passport and invoice number for check in.  "
 		except:
@@ -323,7 +323,7 @@ def addrec8():
 			od=request.form['od']
 			with sql.connect("plane1.sqlite") as con:
 				cur = con.cursor()
-				cur.execute("INSERT INTO planes (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
+				cur.execute("INSERT INTO planesH (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
 				con.commit()
 				msg= "Your tickets have been successfully reserved for booking. U will be notified in 10 minutes of your invoice number and availability of sits. Payment can be done only after recieving invoice number via phone sms and email(with a duration of 30mins to pay). Please use the merchant code (31644) for paying your tickets and complete the booking process. Enter the confirmation cord the textbox provided and your tickets will be mailed to you in a period of 5 mins. You can also use your passport and invoice number for check in.  "
 		except:
@@ -363,7 +363,7 @@ def addrec9():
 			od=request.form['od']
 			with sql.connect("plane1.sqlite") as con:
 				cur = con.cursor()
-				cur.execute("INSERT INTO planes (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
+				cur.execute("INSERT INTO planesI (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
 				con.commit()
 				msg= "Your tickets have been successfully reserved for booking. U will be notified in 10 minutes of your invoice number and availability of sits. Payment can be done only after recieving invoice number via phone sms and email(with a duration of 30mins to pay). Please use the merchant code (31644) for paying your tickets and complete the booking process. Enter the confirmation cord the textbox provided and your tickets will be mailed to you in a period of 5 mins. You can also use your passport and invoice number for check in.  "
 		except:
@@ -403,7 +403,7 @@ def addrec10():
 			od=request.form['od']
 			with sql.connect("plane1.sqlite") as con:
 				cur = con.cursor()
-				cur.execute("INSERT INTO planes (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
+				cur.execute("INSERT INTO planesJ (dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(dest,d1,m1,d2,m2,time,trip,ct,at,clas,sex,age,name,sur,phone,phone2,pnum,email,address,od) )
 				con.commit()
 				msg= "Your tickets have been successfully reserved for booking. U will be notified in 10 minutes of your invoice number and availability of sits. Payment can be done only after recieving invoice number via phone sms and email(with a duration of 30mins to pay). Please use the merchant code (31644) for paying your tickets and complete the booking process. Enter the confirmation cord the textbox provided and your tickets will be mailed to you in a period of 5 mins. You can also use your passport and invoice number for check in.  "
 		except:
